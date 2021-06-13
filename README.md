@@ -10,6 +10,8 @@ E-care is centered towards achieving SDGs goal number three (good health and wel
 Design was done using figma. Here is the figma link - https://www.figma.com/file/ZRwCf0RVsuwgmyD5ewN8rC/E-CARE?node-id=4%3A42
 
 <h2><bold>Contribution guide</bold></h2>
+
+
 1. Fork the repository
 2. Clone and then open it up on your code editor
 3. Open terminal and set upsream branch: git remote add upstream https://github.com/zuri-training/E-Care-FE-pjt-24.git
