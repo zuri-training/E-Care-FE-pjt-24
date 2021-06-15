@@ -5,19 +5,10 @@
 
 https://e-care-pjt-24.netlify.app/
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 949ef861148ce68cab906907fa67f0d7f4eab744
 <h2><bold>Project Documentation</bold></h2>
 
 https://docs.google.com/document/d/1C5Uk8uD8io_2x1oDvDqur01PlW3cBxS7Di5sXFfLB-g/edit
 
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> 949ef861148ce68cab906907fa67f0d7f4eab744
 
 <h2><bold>About E-Care</bold></h2>
 
