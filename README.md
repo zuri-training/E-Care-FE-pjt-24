@@ -1,7 +1,7 @@
 # E-Care-FE-pjt-24
 
 
-<h2><bold>Site Link</bold></h2> 😍
+<h2><bold>Site Link</bold></h2>
 
 https://e-care-pjt-24.netlify.app/
 
