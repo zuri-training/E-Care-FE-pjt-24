@@ -401,11 +401,15 @@ button:hover {
 
 @media screen and (max-width:900px) {
     .section-header {
-        height: 500px;
+        height: 100vh;
     }
 
     .section-header img {
         width: 350px;
+    }
+
+    button {
+        margin-bottom: 100px;
     }
 
     .card {
