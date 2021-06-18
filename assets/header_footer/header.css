@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+/*---------------- Header Starts Here -------------- */
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background:#6305B1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+nav .nav-items{
+    border-radius: 0 10px 0 10px;
+    background-color: yellow;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  /*  background-color: #6305B1;*/
+  }
+  .nav-items{
+    border-radius:none;
+    background-color:#111;
+}
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
+
+/*-------Footer Starts Here -------*/
+
+.footer {
+    padding: 30px;
+    background-color: #6305B1;
+    color: #fff;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    text-align: left;
+}
+
+.footer-row ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-row ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: .8rem;
+}
+
+.footer-row .logo {
+    font-size: 1rem;
+    margin-top: 0px;
+}
+
+.footer-row ul li .logo {
+    margin-top: 0;
+}
+
+.contact li:nth-of-type(2),
+.contact li:nth-of-type(3) {
+    font-size: .7rem;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+
+}
+
+.footer p {
+    text-align: center;
+    font-size: .7rem;
+    width: 90%;
+}
+/*-------Media Query Starts Here -------*/
+@media screen and (max-width:920px) {
+    body {
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width:675px) {
+    .footer-row {
+        flex-direction: column;
+    }
+
+    .footer-row ul {
+        margin-bottom: 20px;
+    }
+
+    .footer-row ul li {
+        font-size: .7rem;
+    }
+
+    .footer-social {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer p {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .social img {
+        margin-left: 0px;
+        margin-right: 20px;
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+
+
