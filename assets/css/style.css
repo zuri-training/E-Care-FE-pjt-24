@@ -16,6 +16,7 @@ a {
 
 nav {
     background-color: #6305B1;
+    z-index: 1000;
 }
 
 .nav {
@@ -402,14 +403,19 @@ button:hover {
 @media screen and (max-width:900px) {
     .section-header {
         height: 100vh;
+        height: 100vh;
+    }
+
+    .section-header div:first-of-type {
+        margin-top: 50px;
+    }
+
+    .section-header p {
+        font-size: .7rem;
     }
 
     .section-header img {
         width: 350px;
-    }
-
-    button {
-        margin-bottom: 100px;
     }
 
     .card {
@@ -548,21 +554,23 @@ button:hover {
         height: 15px;
     }
 
-    .nav-links {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-    } 
     
-    .nav-links.active {
-         display: flex;
-     }
 
 }
 
 @media screen and (max-width:425px) {
     .burger {
         display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 
     /* div ul */
@@ -576,7 +584,7 @@ button:hover {
         transition: opacity 1.5s ease-in;
     }
 
-     /* ul */
+    /* ul */
     .nav-links .nav-list {
         height: 50vh;
         flex-direction: column;
