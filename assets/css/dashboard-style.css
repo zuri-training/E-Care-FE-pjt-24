@@ -26,6 +26,10 @@ li {
     color: #fff;
 }
 
+.left ul li a:focus {
+    color: #DD9268;
+}
+
 .right {
     height: 100vh;
     width: 100%;
