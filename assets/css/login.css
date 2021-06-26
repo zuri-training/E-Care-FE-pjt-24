@@ -1,13 +1,10 @@
-/* Create two equal columns that floats next to each other */
 .column {
   float: left;
   width: 50%;
   padding: 10px;
   margin-bottom: 10em;
   height: 350px; 
-  /* Should be removed. Only for demonstration */
 }
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -119,16 +116,48 @@ input[type="submit"]:hover {
   }
   .center{
   position:absolute;
-  margin-top: 1%;
+  margin-top: 50px;
   left: 50%;
+  width: 350px;
+  background-color: #FFE5C4;
+  border-radius: 0 10px 0 10px;
+  }
+  .right img {
+  display: none;
+  }
+}
+@media screen and (max-width: 940px) {
+  .center{
+  position:relative;
+  left: 60%;
+  margin-top: 15%;
+  padding-bottom: 5px;
   transform: translate(-50%, -50%);
   width: 350px;
   background-color: #FFE5C4;
   border-radius: 0 10px 0 10px;
   }
-  /*.right img {
-  display: none;
-
-  }*/
+  .right img {
+  width:400px;
+  height:400px;
+  }
 }
+
+@media screen and (width: 1024px) {
+  .center{
+  position:relative;
+  left: 60%;
+  margin-top: 15%;
+  padding-bottom: 5px;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  background-color: #FFE5C4;
+  border-radius: 0 10px 0 10px;
+  }
+  .right img {
+  width:400px;
+  height:400px;
+  }
+}
+
 
