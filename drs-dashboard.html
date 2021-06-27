@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/dashboard-style.css">
     <link rel="stylesheet" href="./assets/css/drs-dashboard.css">
+
+
+<script src="https://kit.fontawesome.com/c8dd244e81.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -37,7 +40,17 @@
                         <img src="./assets/img/profile.png" alt="profile">
                         <p>Welcome <br> <span class="username">Doc. Jonathan</span></p>
                     </li>
-                    <li class="nav-items dash-chevron"><img src="./assets/img/chevron.png" alt="chevron"></li>
+                    <li class="nav-items dash-chevron">
+                        <i class="fas fa-angle-down"></i><!-- <img src="./assets/img/chevron.png" alt="chevron"> -->
+
+                        <!-- <div class="dropdown">
+                            <ul>
+                                <li><a href="#">Edit profile</a></li> 
+                                <li><a href="#">SIGNOUT</a></li>         
+                            </ul>         
+                        </div> -->
+
+                    </li>
                 </ul>
             </div>
         </div>
@@ -48,17 +61,17 @@
             <ul>
                 <li><a href="#">My Patients</a>
                     <ul>
-                        <li><a href="#">New <span>(7)</span></a></li>
-                        <li><a href="#">Discharged <span>(13)</span></a></li>
+                        <li><a href="./dashboard.html">New <span>(7)</span></a></li>
+                        <li><a href="./ds-dashboard.html">Discharged <span>(13)</span></a></li>
                     </ul>
                 </li>
-                <li><a href="#">My Connects</a></li>
-                <li><a href="dr-dashboard.html">Statistics</a></li>
+                <li><a href="./co-dashboard.html">My Connects</a></li>
+                <li><a href="./drs-dashboard.html">Statistics</a></li>
             </ul>
 
         </div>
 
-        <div class="right">
+        <div class="rights">
             <!--------------------- one column --------------------->
             <div class="outer-div">
                 <div class="inner-div">
@@ -75,7 +88,8 @@
             <div class="container-three">
                 <div class="contain-three">
                     <div class="box1">
-                        <i class="fab fa-html5 fa-3x"></i>
+                        <!-- <i class="fab fa-html5 fa-3x"></i> -->
+                        <i class="fas fa-hospital-user fas-3x"></i>
                         <h2>Total Patients</h2>
                         <p>30</p>
                     </div>
@@ -93,27 +107,28 @@
             </div>
    <!--------------------- 4 column section ----------------->
    <div class="container-four">
-                <div class="contain-four">
-                    <div class="box1">
-                        <h6>30</h6>
-                    </div>
-                    <div class="box2">
-                        <h6>30</h6>
-                    </div>
-                    <div class="box3">
-                        <h6>12</h6>
-                    </div> 
-                    <div class="box2">
-                        <h6>30</h6>
-                    </div>    
-                </div>    
-                 <div class="dash-btn-area">
-            <span></span>
-            <button class="button dash-logout">LOG OUT</button>
-        </div>
-
-         
+        <div class="contain-four">
+            <div class="box11">
+                <h6>30</h6>
             </div>
+            <div class="box22">
+                <h6>30</h6>
+            </div>
+            <div class="box33">
+                <h6>12</h6>
+            </div> 
+            <div class="box44">
+                <h6>30</h6>
+            </div>    
+        </div>    
+                 
+    </div>
+
+    <div class="dash-btn-area">
+        <span></span>
+        <button class="button dash-logout">LOG OUT</button>
+    </div>
+         
 
 
    
@@ -121,5 +136,11 @@
 
         </div>
     </main>
+
+    <!-- <script>
+        document.querySelector(".navlinks ul li").addEventListener("click", function(){
+            this.classsList.toggle("active");
+        });
+    </script> -->
 </body>
 </html>
