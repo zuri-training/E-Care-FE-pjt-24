@@ -9,14 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/signup.css">
 </head>
 
 <body>
-   <!---------- Header Starts Here ---------------->
+    <!---------- Header Starts Here ---------------->
     <nav>
         <div class="nav">
-            <div class="nav-logo"><a href="#" class="logo"><img src="./assets/img/logo.png" alt="E-care logo" width="80px"></a></div>
+            <div class="nav-logo"><a href="#" class="logo"><img src="./assets/img/logo.png" alt="E-care logo"
+                        width="80px"></a></div>
             <div class="burger">
                 <div class="burger-line line1"></div>
                 <div class="burger-line line2"></div>
@@ -28,18 +29,101 @@
                     <li class="nav-items"><a href="#about" class="nav-link">About</a></li>
                     <li class="nav-items"><a href="#services" class="nav-link">Services</a></li>
                     <li class="nav-items"><a href="#footer" class="nav-link">Contact</a></li>
-                    <li class="nav-items"><a href="./signup.html" class="nav-link">Sign up</a></li>                
+                    <li class="nav-items"><a href="./login.html" class="nav-link">Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-<!-- Body Starts Here -->
+    <!-- Body Starts Here -->
     <main class="main">
-        <h3>SIGN UP</h3>
+        <div class="signup">
+            <h3>Registration Form</h3>
+
+
+
+            <form action="#">
+                <div class="signup-form">
+                    <div class="person-status">
+                        <div>
+                              <input type="radio" id="doctor" name="person" value="Doctor">
+                              <label for="doctor">Doctor</label><br>
+                        </div>
+                        <div>
+                              <input type="radio" id="nurse" name="person" value="Nurse">
+                              <label for="nurse">Nurse</label><br>
+                        </div>
+
+                    </div>
+
+                    <div class="profile-pic">
+                        <p>Upload profile picture</p>
+                        <div>
+                            <img src="./assets/img/profile-holder.png" alt="profile-image" class="upload-profile-img">
+                            <label for="profile-pic-img">Choose file</label>
+                            <input type="file" id="profile-pic-img" name="profile-pic" hidden>
+                            <!-- <button class="upload-pic-btn">Choose file</button> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sign-up-form-lower">
+
+                    <div>
+                        <div>
+                            <label for="firstname">First Name</label> <br>
+                            <input type="text" name="first-name" id="firstname" required>
+                        </div>
+
+                        <div>
+                            <label for="med-license-num">Medical License Number</label> <br>
+                            <input type="text" name="med-license-num" id="med-license-num" required>
+                        </div>
+
+                        <div>
+                            <label for="specialization">Specialization</label> <br>
+                            <input type="text" name="specialization" id="specialization" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label> <br>
+                            <input type="text" name="email" id="email" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="lastname">Last Name</label> <br>
+                            <input type="text" name="last-name" id="lastname" required>
+                        </div>
+
+                        <div>
+                            <label for="text">Medical License Number</label> <br>
+                            <input type="text" name="med-license-num" id="med-license-num" required>
+                        </div>
+
+                        <div>
+                            <label for="phone-number">Phone Number</label> <br>
+                            <input type="text" name="phone-number" id="phone-number" required>
+                        </div>
+
+                        <div>
+                            <label for="hospital-name">Hospital Name</label> <br>
+                            <input type="text" name="hospital-name" id="hospital-name" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="submit-btn">
+                    <button type="submit">REGISTER</button>
+                </div>
+
+            </form>
+
+        </div>
     </main>
-   <!--  footer -->
-   <footer class="footer" id="footer">
+    <!--  footer -->
+    <footer class="footer" id="footer">
         <div class="footer-row">
             <ul>
                 <li><a href="#" class="logo">E-care</a></li>
@@ -73,6 +157,7 @@
             </div>
         </div>
     </footer>
-<script src="../js/app.js"></script>
+    <script src="../js/app.js"></script>
 </body>
+
 </html>
