@@ -1,6 +1,6 @@
 .lefts {
     background: #6305B1;
-    height: 125vh;
+    height: 150vh;
     width: 200px;
     margin-top: 10px;
     padding: 50px 20px;
@@ -101,64 +101,77 @@
 }
 
 /*----------------- 4 column --------------*/
-.three-column-container{
-    overflow: hidden;
-    margin-top: 3em;
+
+.container-four{
+	width:100%;
+	height: 30vh;
+	margin-top: 5em;
+	/*display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;*/
 }
-.three-left{
-  float: left;
-  width: 16%;
-  height: 100px;
-  margin: 20px 0 20px 75px;
-  background-color: rgba(99, 5, 177, 0.64);
-  padding-bottom: 20px;
-  border-radius: 20px;
-  overflow: hidden;
+.contain-four{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
-.three-left p{
-  text-align: center;
-  font-weight: bold;
-  margin-top: 40px;
-  padding: 0;
-}
+
 /*---------------------- Responsiveness----------*/
-@media screen and (max-width: 889px) {
-	.three-column-container{
-    overflow: hidden;
-    margin-top: 10em;
-	}
-
-}
-@media screen and (max-width: 659px) {
-	.three-column-container{
-    overflow: hidden;
-    margin-top: 15em;
-	}
-
-}
-/*@media screen and (max-width: 649px) {
-	.three-column-container{
-    overflow: hidden;
-    margin-top: 15em;
-	}
-
-}*/
-@media screen and (max-width: 600px) {
-.lefts {
+@media screen and (max-width: 360px) {
+	.lefts {
     background: #6305B1;
-    height: 200vh;
-    width: 200px;
-    margin-top: 10px;
-    padding: 50px 20px;
+    height: 263vh;
 	}
-.lefts ul li {
-    margin-bottom: 15px;
-    font-size: .8rem;
+	.container-four{
+    overflow: hidden;
+    margin-top: 25em;
+    height: 65em;
 	}
-.lefts ul li a {
-    color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+	.lefts {
+    background: #6305B1;
+    height: 263vh;
 	}
-	
+	.container-four{
+    overflow: hidden;
+    margin-top: 25em;
+    height: 65em;
+	}
+	.dash-btn-area .button{
+		font-size: 6.6px;
+		font-weight: 700px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.inner-div img{
+	display: none;
+	}
+	.inner-div h4{
+	margin:30px 0 0 30px;
+	padding-top: 10px;
+	color: rgba(99, 5, 177, 0.64);
+	font-size: 15px;
+	}
+	.lefts {
+    background: #6305B1;
+    height: 205vh;
+	}
+	.container-four{
+    overflow: hidden;
+    margin-top: 19em;
+    height: 65em;
+	}
+
+.inner-div p{
+	margin:30px 0 0 30px;
+	color: rgba(99, 5, 177, 0.64);
+	font-size: 15px;
+	}
 }
 
 @media screen and (max-width: 930px) {
@@ -186,19 +199,43 @@
 	margin-top: 10px;
 	}
 }
-@media screen and (max-width: 500px) {
-	.inner-div img{
-	display: none;
+
+@media screen and (max-width: 995px) {
+	.lefts {
+    background: #6305B1;
+    height: 180vh;
 	}
-	.inner-div h4{
-	margin:30px 0 0 30px;
-	padding-top: 10px;
-	color: rgba(99, 5, 177, 0.64);
-	font-size: 15px;
+	.container-four{
+    overflow: hidden;
+    margin-top: 10em;
+    height: 37em;
 	}
-.inner-div p{
-	margin:30px 0 0 30px;
-	color: rgba(99, 5, 177, 0.64);
-	font-size: 15px;
+	.contain-four{
+		margin-top: 3em;
+	}
+}
+@media screen and (max-width: 590px) {
+	.lefts {
+    background: #6305B1;
+    height: 240vh;
+	}
+	.container-four{
+    overflow: hidden;
+    margin-top: 20em;
+    height: 65em;
+	}
+	.contain-four{
+		margin-top: 3em;
+	}
+}
+@media screen and (max-width: 540px) {
+	.lefts {
+    background: #6305B1;
+    height: 225vh;
+	}
+	.container-four{
+    overflow: hidden;
+    margin-top: 19em;
+    height: 65em;
 	}
 }
