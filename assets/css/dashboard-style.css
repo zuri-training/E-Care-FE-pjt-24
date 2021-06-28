@@ -3,6 +3,7 @@ main {
     justify-content: flex-start;
     align-items: flex-start;
     background-color: #e3e3e3;
+    overflow-x: hidden;
 }
 
 li {
@@ -160,4 +161,12 @@ button.dash-logout {
     font-weight: 500;
     top: -5px;
     right: -5px;
+}
+
+
+@media screen and (max-width:675px) {
+    .table {
+        width: 70%;
+        overflow-x: scroll;
+    }
 }
