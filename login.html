@@ -41,7 +41,7 @@
             <div class="column left">
                 <div class="center">
                     <h1>Login</h1>
-                    <form id="loginValidation" method ="post">
+                    <form id="loginValidation" method ="post" onsubmit="handleSubmit(); return false" >
                         <div class="txt-field">
                             <label>Email</label><br>
                             <input type="text"  placeholder="Enter your email" required=""> 
@@ -100,7 +100,15 @@
             </div>
         </div>
     </footer>
+
+<script type="text/javaScript">
+    function handleSubmit() {
+        window.location = window.origin + "/dashboard.html"
+    }
+</script>
+
 <script src="./assets/js/app.js"></script>
+
 
 </body>
 </html>
