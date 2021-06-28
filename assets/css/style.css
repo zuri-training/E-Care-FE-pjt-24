@@ -494,35 +494,32 @@ button:hover {
     .nav-links {
         z-index: 3;
     }
-    nav {
-        /* z-index: 5; */
-    }
-    
-    .nav {
-        /* z-index: 6; */
-    }
 
     .header-img {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
+    .section-header {
+        flex-direction: column;
+    }
     
     .section-header img {
-        position: relative;
-        display: inline-block;
-        top: -100px;
-        right: 250px;
-        /* z-index: 2; */
+        position: absolute;
+        /* top: -100px;
+        right: 250px; */
+        z-index: 1;
+        top: 80px;
     }
 
     .section-header div:first-of-type {
         width: 100%;
-        margin-top: 100px;
+        margin-top: 10rem;
         /* margin-bottom: 50px; */
         padding: 10px;
         background-color: #e8e8e880;
-        z-index: 1;
+        z-index: 2;
     }
 
     .section-about div:last-of-type {
@@ -584,6 +581,10 @@ button:hover {
 }
 
 @media screen and (max-width:425px) {
+    .section-header {
+        height: 90vh;
+    }
+
     .burger {
         display: block;
     }
@@ -641,5 +642,10 @@ button:hover {
         border-top-right-radius: 10px;
         border-bottom-left-radius: 10px;
     }
+
+    /* .section-header img {
+        top: -150px;
+        right: 250px;
+    } */
 
 }
