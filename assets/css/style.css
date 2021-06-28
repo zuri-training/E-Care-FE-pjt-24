@@ -16,7 +16,7 @@ a {
 
 nav {
     background-color: #6305B1;
-    z-index: 1000;
+    /* z-index: 4; */
 }
 
 .nav {
@@ -109,6 +109,7 @@ h1 {
 
 .section-header div:first-of-type {
     width: 50%;
+    /* z-index: 3; */
 }
 
 .section-header div:last-of-type {
@@ -404,7 +405,6 @@ button:hover {
 @media screen and (max-width:900px) {
     .section-header {
         height: 100vh;
-        height: 100vh;
     }
 
     .section-header div:first-of-type {
@@ -491,12 +491,38 @@ button:hover {
 }
 
 @media screen and (max-width:675px) {
+    .nav-links {
+        z-index: 3;
+    }
+    nav {
+        /* z-index: 5; */
+    }
+    
+    .nav {
+        /* z-index: 6; */
+    }
+
+    .header-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .section-header img {
-        display: none;
+        position: relative;
+        display: inline-block;
+        top: -100px;
+        right: 250px;
+        /* z-index: 2; */
     }
 
     .section-header div:first-of-type {
         width: 100%;
+        margin-top: 100px;
+        /* margin-bottom: 50px; */
+        padding: 10px;
+        background-color: #e8e8e880;
+        z-index: 1;
     }
 
     .section-about div:last-of-type {
@@ -555,8 +581,6 @@ button:hover {
         height: 15px;
     }
 
-    
-
 }
 
 @media screen and (max-width:425px) {
@@ -587,6 +611,7 @@ button:hover {
 
     /* ul */
     .nav-links .nav-list {
+        /* z-index: 7; */
         height: 50vh;
         flex-direction: column;
         align-items: center;
