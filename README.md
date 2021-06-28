@@ -1,4 +1,9 @@
-# E-Care-FE-pjt-24
+<h2><bold>Team</bold></h2>
+PJT-24
+
+<h2><bold>Project Name</bold></h2>
+
+E-Care
 
 
 <h2><bold>Site Link</bold></h2>
@@ -7,7 +12,7 @@ https://e-care-pjt-24.netlify.app/
 
 <h2><bold>Project Documentation</bold></h2>
 
-https://docs.google.com/document/d/1C5Uk8uD8io_2x1oDvDqur01PlW3cBxS7Di5sXFfLB-g/edit
+https://docs.google.com/document/d/1O5nmOQxj5fraqqKJf5mnuZ_JoSvRJLE6e_XwNaNBy-k/edit
 
 
 <h2><bold>About E-Care</bold></h2>
@@ -31,3 +36,16 @@ Design was done using figma. Here is the figma link - https://www.figma.com/file
 8. To make sure there are no conflicts: git pull upstream develop
 9. Push changes to your new branch: git push origin your-current-branch-name
 10. Create a pull request to the develop branch
+
+<h2><bold>Project Structure</bold></h2>
+
+
+1. **ASSETS FOLDER**
+    This folder contains all the images and icons, javascript and css scripts used in the project.
+
+2. **ROOT FOLDER**
+    This is the **parent** folder that will contain all the html files in the projects
+
+
+
+
