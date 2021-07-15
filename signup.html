@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login :: E-care</title>
+    <title>Register :: E-care</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -13,6 +13,7 @@
 </head>
 
 <body>
+ 
     <!---------- Header Starts Here ---------------->
     <nav>
         <div class="nav">
@@ -23,48 +24,17 @@
                 <div class="burger-line line2"></div>
                 <div class="burger-line line3"></div>
             </div>
-            <div class="nav-links">
-                <ul class="nav-list">
-                    <li class="nav-items"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-items"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-items"><a href="#services" class="nav-link">Services</a></li>
-                    <li class="nav-items"><a href="#footer" class="nav-link">Contact</a></li>
-                    <li class="nav-items"><a href="./login.html" class="nav-link">Login</a></li>
-                </ul>
-            </div>
         </div>
     </nav>
 
     <!-- Body Starts Here -->
     <main class="main">
         <div class="signup">
-            <h3>Registration Form</h3>
-
-
+            <h3>Create your account</h3>
 
             <form action="#">
                 <div class="signup-form">
-                    <div class="person-status">
-                        <div>
-                              <input type="radio" id="doctor" name="person" value="Doctor">
-                              <label for="doctor">Doctor</label><br>
-                        </div>
-                        <div>
-                              <input type="radio" id="nurse" name="person" value="Nurse">
-                              <label for="nurse">Nurse</label><br>
-                        </div>
 
-                    </div>
-
-                    <div class="profile-pic">
-                        <p>Upload profile picture</p>
-                        <div>
-                            <img src="./assets/img/profile-holder.png" alt="profile-image" class="upload-profile-img">
-                            <label for="profile-pic-img">Choose file</label>
-                            <input type="file" id="profile-pic-img" name="profile-pic" hidden>
-                            <!-- <button class="upload-pic-btn">Choose file</button> -->
-                        </div>
-                    </div>
                 </div>
 
                 <div class="sign-up-form-lower">
@@ -72,7 +42,7 @@
                     <div>
                         <div>
                             <label for="firstname">First Name</label> <br>
-                            <input type="text" name="first-name" id="firstname" required>
+                            <input type="text" name="firstname" id="firstname" required>
                         </div>
 
                         <div>
@@ -81,36 +51,38 @@
                         </div>
 
                         <div>
-                            <label for="specialization">Specialization</label> <br>
-                            <input type="text" name="specialization" id="specialization" required>
+                            <label for="specialization">Phone Number</label> <br>
+                            <input type="text" name="phonenumber" id="phonenumber" required>
                         </div>
 
                         <div>
-                            <label for="email">Email</label> <br>
-                            <input type="text" name="email" id="email" required>
+                            <label for="email">Password</label> <br>
+                            <input type="text" name="password" id="password" required>
                         </div>
                     </div>
 
                     <div>
                         <div>
                             <label for="lastname">Last Name</label> <br>
-                            <input type="text" name="last-name" id="lastname" required>
+                            <input type="text" name="lastname" id="lastname" required>
                         </div>
 
                         <div>
-                            <label for="text">Medical License Number</label> <br>
-                            <input type="text" name="med-license-num" id="med-license-num" required>
+                            <label for="text">Specialization</label> <br>
+                            <input type="text" name="specialization" id="specialization" required>
                         </div>
 
                         <div>
-                            <label for="phone-number">Phone Number</label> <br>
-                            <input type="text" name="phone-number" id="phone-number" required>
+                            <label for="phone-number">Email Address</label> <br>
+                            <input type="text" name="email" id="email" required>
                         </div>
 
                         <div>
-                            <label for="hospital-name">Hospital Name</label> <br>
-                            <input type="text" name="hospital-name" id="hospital-name" required>
+                            <label for="hospital-name">Confirm Password</label> <br>
+                            <input type="text" name="cpassword" id="cpassword" required>
                         </div>
+
+                        
                     </div>
                 </div>
 
@@ -123,40 +95,12 @@
         </div>
     </main>
     <!--  footer -->
-    <footer class="footer" id="footer">
-        <div class="footer-row">
-            <ul>
-                <li><a href="#" class="logo">E-care</a></li>
-            </ul>
-            <ul>
-                <li>Company</li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-
-            <ul>
-                <li>Resources</li>
-                <li><a href="#footer">Contact</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Privacy & Policy</a></li>
-            </ul>
-            <ul class="contact">
-                <li>Contact Us</li>
-                <li>2972 Westheimer Rd. Santa Ana, Illinois </li>
-                <li>85486</li>
-            </ul>
-        </div>
-        <div class="footer-social">
+   <footer class="footers" id="footer">
+        <div class="footer-socials">
             <p>© 2021 E-care. All rights reserved.</p>
-
-            <div class="social">
-                <img src="./assets/img/instagram.png" alt="instagram">
-                <img src="./assets/img/linkedin.png" alt="linkedin">
-                <img src="./assets/img/facebook.png" alt="facebook">
-            </div>
         </div>
     </footer>
+    
     <script src="./assets/js/app.js"></script>
 </body>
 

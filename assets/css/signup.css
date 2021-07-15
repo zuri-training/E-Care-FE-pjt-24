@@ -16,6 +16,8 @@ main {
 
 h3 {
     color: #6305B1;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .signup-form {
@@ -116,29 +118,22 @@ label {
       width: 100%;
   }
 
-  /* input[type='submit'] {
-    margin-top: 20px;
-    padding: 10px 100px;
-    background-color: #6305B1;
-    color: #fff;
-    border: none;
-    font-size: 1rem;
-    font-weight: 500;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    cursor: pointer;
-  }
-  input[type="submit"]:hover {
-    background-color: #fff;
-    color: #6305B1;
-    border: 1px solid #6305B1;
-  } */
 
   .submit-btn {
       display: flex;
       justify-content: center;
       align-items: center;
   }
+   .footers {
+            padding: 20px;
+            background-color: #6305B1;
+            color: #fff;
+            font-size: 15px;
+        }
+        .footer-socials p {
+            text-align: center;
+
+        }
 
   @media screen and (max-width: 1000px) {
     .sign-up-form-lower {

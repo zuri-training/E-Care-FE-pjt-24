@@ -14,7 +14,7 @@
           color: red!important;
           padding-top:100px !important;
 
-        }*/]
+        }*/
         section{
           background-color: white;
            /* background: url("./bg2.jpg");*/
@@ -25,10 +25,10 @@
         }
         .form-container{
             position: absolute;
-            top: 52%;
+            top:50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            width: 380px;
+            width: 395px;
             padding: 50px 30px;
             border-radius: 10px;
             box-shadow:0px 0px 1px #000;
@@ -38,12 +38,11 @@
             font-size: 1em;
             text-transform: uppercase;
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
         .control label{
           padding-bottom: 9em !important;
         }
-        .control input[type=password],
         .control input[type=email]{
             padding: 10px;
             font-size: 16px;
@@ -53,52 +52,43 @@
             background: white;
             outline: none;
             border: 1px solid black;
-            margin: 0.6em 0;
+            margin: 0.9em 0;
         }  
-        .control input[type=submit]{
-            padding: 10px;
-            font-size: 16px;
-            display: block;
-            width: 50%;
-            color:#000;
-            background: #ddd;
-            outline: none;
-            border: none;
-          /*  text-align: center;*/
-           /* align-items: center;*/
-            margin: 1em 0;
-            margin-left: 5em;
-        } 
-       /*.control input[type=checkbox]{
-           padding: 10px;
-           font-size: 2px;
-            display: block;
-            width: 100%;
-            color:#000;
-            background: red;
-            outline: none;
-            border: none;
-            margin: -1em 0;
-        }         */
-        .control .btn{
-            color: #fff;
-            text-transform: uppercase;
-            background: crimson;
-            opacity: .7;
-            transition:opacity .3s ease;
-            cursor: pointer;
+        .form-container h6{
+            font-size: 12px;
+            margin-top: -15px;
+            color: #555759;
+
         }
-        .btn:focus{
-            opacity: 1;
+        ::placeholder{
+            font-size: 13px;
+        }
+
+        .btn-2{
+            float: right;
+            width: 90px;
+            margin-right: 60px;
+            padding: 5px;
+            margin-top: 20px;
+            background-color:green;
+            border:none;
+            color: white;
+            text-align: center;
+        }
+        .btn-1{
+            float: left;
+            width: 90px;
+            margin-left: 40px;
+            padding: 5px;
+             margin-top: 20px;
+            border-color: green;
+            border:1px thin;
+            color: green;
+            text-align: center;
         }
         span{
           font-size: 15px;
         }
-       /* p{
-            text-align: right;
-            padding: 0;
-            margin-top: 0;
-        }*/
         a{
             text-decoration: none;
             color: black;
@@ -108,15 +98,4 @@
         }
         a:hover{
             opacity: 1;
-        }
-
-        .footers {
-            margin-top: 32em;
-            padding: 20px;
-            background-color: #6305B1;
-            color: #fff;
-        }
-        .footer-socials p {
-            text-align: center;
-
         }

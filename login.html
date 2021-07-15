@@ -23,81 +23,38 @@
                 <div class="burger-line line2"></div>
                 <div class="burger-line line3"></div>
             </div>
-            <div class="nav-links">
-                <ul class="nav-list">
-                    <li class="nav-items"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-items"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-items"><a href="#services" class="nav-link">Services</a></li>
-                    <li class="nav-items"><a href="#footer" class="nav-link">Contact</a></li>
-                    <li class="nav-items"><a href="./assets/Login/login.html" class="nav-link">Login</a></li>                
-                </ul>
-            </div>
         </div>
     </nav>
 
 <!-- Body Starts Here -->
-    <main class="main">
-        <div class="row">
-            <div class="column left">
-                <div class="center">
-                    <h1>Login</h1>
-                    <form id="loginValidation" method ="post">
-                        <div class="txt-field">
-                            <label>Email</label><br>
-                            <input type="text"  placeholder="Enter your email" required=""> 
-                        </div>
-                        <div class="txt-field">
-                            <label>Password</label><br>
-                            <input type="password"  placeholder="Enter your password"required="">
-                            
-                        </div>
-                        <input type="submit" value="login"><br>
-                        <div class="pass">Forgot Password?</div>
-                            <br>
-                        <div class="signup-link">
-                            New to E-care?<a href="#"><span> Signup</span></a>
-                        </div>
-                    </form>
-                </div>
+    <section>
+        <div class="form-container">
+            <h1>Sign in to your Account</h1>
+        <form action="index.html" >
+            <div class="control">
+            <label for="email" class="text">Email</label>
+            <input type="email" id="email" >
             </div>
-            <div class="column right">
-                <img src="./assets/img/image_1.png" alt="hero-image">
+            <div class="control">
+            <label for="psw" class="text">Password</label>
+            <input type="password" id="psw" >
             </div>
+            <span><input type="checkbox"> Remember me</span>
+            <span><a href="#">Forget password ?</span>
+
+            <div class="control">
+            <input type="submit" class="btn" value="Sign in">
+            </div>
+        </form>
+        
         </div>
-    </main>
+    </section>
+
+
    <!--  footer -->
-   <footer class="footer" id="footer">
-        <div class="footer-row">
-            <ul>
-                <li><a href="#" class="logo">E-care</a></li>
-            </ul>
-            <ul>
-                <li>Company</li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-
-            <ul>
-                <li>Resources</li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Privacy & Policy</a></li>
-            </ul>
-            <ul class="contact">
-                <li>Contact Us</li>
-                <li>2972 Westheimer Rd. Santa Ana, Illinois </li>
-                <li>85486</li>
-            </ul>
-        </div>
-        <div class="footer-social">
+   <footer class="footers" id="footer">
+        <div class="footer-socials">
             <p>© 2021 E-care. All rights reserved.</p>
-
-            <div class="social">
-                <img src="./assets/img/instagram.png" alt="instagram">
-                <img src="./assets/img/linkedin.png" alt="linkedin">
-                <img src="./assets/img/facebook.png" alt="facebook">
-            </div>
         </div>
     </footer>
 <script src="./assets/js/app.js"></script>
